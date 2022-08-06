@@ -32,7 +32,7 @@
     <!-- Custom styles end -->
   </head>
 
-  <body>
+  <body data-page>
     <!-- Header section -->
     <header class="header">
       <div class="container header-container">
@@ -85,7 +85,11 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="main-titel">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-btn btn btn-mode-dark" type="button">
+          <button
+            class="main-btn btn btn-mode-dark"
+            type="button"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -652,5 +656,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
