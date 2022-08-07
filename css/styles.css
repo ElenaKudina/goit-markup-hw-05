@@ -200,7 +200,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--anim-fast);
+  transition: 250ms color var(--anim-fast);
 }
 .header-contacts-item {
   color: var(--dark-txt-cl);
@@ -386,7 +386,7 @@ p {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color var(--anim-fast), border-color var(--anim-fast);
+  transition: 250ms border-color var(--anim-fast);
 }
 
 .icon-clients {
@@ -495,8 +495,8 @@ p {
   padding-left: 22px;
   border-radius: 4px;
 
-  transition: color var(--anim-fast), background-color var(--anim-fast),
-    box-shadow var(--anim-fast);
+  transition: 250ms color var(--anim-fast),
+    250ms background-color var(--anim-fast), 250ms box-shadow var(--anim-fast);
 }
 
 .portfolio-foto {
@@ -628,7 +628,8 @@ p {
   height: 44px;
   background-color: var(--btn-txt-cl);
   border-radius: 50%;
-  transition: 250ms var(--anim-fast);
+
+  transition: 250ms background-color var(--anim-fast);
 
   /* outline: 2px solid red;
   outline-offset: -2px; */
@@ -636,6 +637,7 @@ p {
 
 .socials-icon {
   fill: #afb1b8;
+  transition: 250ms fill var(--anim-fast);
 }
 
 .socials-link:hover,
